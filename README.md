@@ -13,7 +13,6 @@ added functionality for reencoding with the following features:
 the results have been visualized using the following methods:
 * for few test images scikit-learn and matplotlib give nice 2D images that indicate that embeddings are rather drifting apart:
 > TODO: insert pictures for ~10 sample images with ~100 reencodings
-![image](images/3030.jpg "Logo Title Text 1")
 * for more advanced plots (3D) and easy analysis of scalar values TensorBoard offers nice visualization at the cost of at times very high latency and long loading times for projecting embeddings
 > TODO: insert images and maybe videos of TB for many images with many reencodings with color coding images the belong togehter
 > TODO: scalar values that show the distance in feature space between consecutive images for the same data set
@@ -21,10 +20,14 @@ the results have been visualized using the following methods:
 > TODO: UMAP images for same data as before
 
 ## Conclusion
-Contrary to previous expectations the process of reencoding image data does not tend to converge. Interestingsly after only ~20 (maybe a bit more) reencodings it is almost impossible to infer the original image or the next 20 reencoding steps.
+Contrary to previous expectations the process of reencoding image data does not tend to converge. Interestingsly after only ~20 (maybe a bit more) reencodings it is almost impossible for a human to infer the original image or the next 20 reencoding steps.
 Looking at the scalar data and the plots it even looks like the embeddings diverge to a certain degree although the reencodings of different original images look similar to the human eye.
 Even for low resolution pictures (30x30 px) neither the image data nor the embeddings converge. Looking at the t-SNE plot the data looks like a raveled ball of wool.
-> TODO: insert video of wool ball
+
+![image](images/3030.jpg "Original Picture for 10000 iterations")
+This is the original picture for 10,000 iterations.
+It was taken from the Places365 database and cropped to 30x30 px.
+
 <video controls="controls">
   <source type="video/mp4" src="woolball.mov" width="796" height="751">
   <p>Your browser does not support the video element.</p>
