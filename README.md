@@ -41,19 +41,19 @@ The resampled images for different original images seem to be similar in their a
 <div style="overflow-x:scroll; width:100%;">
 <table style="table-layout:fixed; width:1500px;">
  <tr>
-  <td><a href="images/image1_s=0.jpg">                  <img src="images/image1_s=0.jpg">              </a></td>
-  <td><a href="images/van-gogh/image1_stylized.jpg">    <img src="images/van-gogh/image1_stylized.jpg"></a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
-  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/image1_s=0.jpg">                  <img src="images/image1_s=0.jpg">                </a></td>
+  <td><a href="images/van-gogh/image1_stylized.jpg">    <img src="images/van-gogh/image1_stylized.jpg">  </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg">   </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/cezanne/image1_stylized.jpg">   </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/el-greco/image1_stylized.jpg">  </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/gaugin/image1_stylized.jpg">    </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/kandinsky/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/kirchner/image1_stylized.jpg">  </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/monet/image1_stylized.jpg">     </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/morisot/image1_stylized.jpg">   </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/peploe/image1_stylized.jpg">    </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/pollock/image1_stylized.jpg">   </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/roerich/image1_stylized.jpg">   </a></td>
  </tr>
  <tr>
   <td>original          </td>
