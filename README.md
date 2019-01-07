@@ -1,5 +1,7 @@
+
 # Overview of results so far
 
+<link rel="stylesheet" href="style.css"></link>
 ## Basics and local stuff
 built TF from source for 2x speed increase on local machine
 
@@ -17,15 +19,60 @@ After around 10 iterations the original image content is hardly recognisable any
 > TODO: Insert original image and after 10 iterations, van gogh and picasso
 
 While the abstraction is more obvious for the first few iterations, the image seem to vary less for later iterations.
-<a href="images/van-gogh/image1_s=0.jpg"><img src="images/van-gogh/image1_s=0.jpg" align="left" width="150"></a>
-<a href="images/van-gogh/image1_s=1.jpg"><img src="images/van-gogh/image1_s=1.jpg" align="left" width="150"></a>
-<a href="images/van-gogh/image1_s=5.jpg"><img src="images/van-gogh/image1_s=5.jpg" align="left" width="150"></a>
-<a href="images/van-gogh/image1_s=10.jpg"><img src="images/van-gogh/image1_s=10.jpg" align="left" width="150"></a>
-<a href="images/van-gogh/image1_s=20.jpg"><img src="images/van-gogh/image1_s=20.jpg" align="left" width="150"></a>
-> TODO insert image after 10 and 20 iterations, van gogh
+
+<table style="width:100%; table-layout:fixed">
+ <tr>
+  <td><a href="images/van-gogh/image1_s=0.jpg"> <img src="images/van-gogh/image1_s=0.jpg" align="left"  width="150px"></a></td>
+  <td><a href="images/van-gogh/image1_s=1.jpg"> <img src="images/van-gogh/image1_s=1.jpg" align="left"  width="150px"></a></td>
+  <td><a href="images/van-gogh/image1_s=5.jpg"> <img src="images/van-gogh/image1_s=5.jpg" align="left"  width="150px"></a></td>
+  <td><a href="images/van-gogh/image1_s=10.jpg"><img src="images/van-gogh/image1_s=10.jpg" align="left" width="150px"></a></td>
+  <td><a href="images/van-gogh/image1_s=20.jpg"><img src="images/van-gogh/image1_s=20.jpg" align="left" width="150px"></a></td>
+ </tr>
+ <tr>
+  <td>s = 0</td>
+  <td>s = 1</td>
+  <td>s = 5</td>
+  <td>s = 10</td>
+  <td>s = 20</td>
+ </tr>
+</table>
 
 The resampled images for different original images seem to be similar in their abstract appearance, yet they do not become more similar over time.
->TOD:show two different images original and after 100 iterations
+<div style="overflow-x:scroll; width:100%;">
+<table style="table-layout:fixed; width:1500px;">
+ <tr>
+  <td><a href="images/image1_s=0.jpg">                  <img src="images/image1_s=0.jpg">              </a></td>
+  <td><a href="images/van-gogh/image1_stylized.jpg">    <img src="images/van-gogh/image1_stylized.jpg"></a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+  <td><a href="images/picasso/image1_stylized.jpg">     <img src="images/picasso/image1_stylized.jpg"> </a></td>
+ </tr>
+ <tr>
+  <td>original          </td>
+  <td>van-gogh s=100    </td>
+  <td>picasso s=100     </td>
+  <td>cezanne s=100     </td>
+  <td>el-greco s=100    </td>
+  <td>gaugin s=100      </td>
+  <td>kandinsky s=100   </td>
+  <td>kirchner s=100    </td>
+  <td>monet s=100       </td>
+  <td>morisot s=100     </td>
+  <td>peploe s=100      </td>
+  <td>pollock s=100     </td>
+  <td>roerich s=100     </td>
+ </tr>
+</table>
+</div>
+>TODO:show two different images original and after 100 iterations
 
 Looking at 100 iterations for different styles for the same picture...
 >TODO: videos of resampled style transfer
