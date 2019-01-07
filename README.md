@@ -87,9 +87,41 @@ The resampled images for different original images seem to be similar in their a
  </tr>
 </table>
 </div>
->TODO:show two different images original and after 100 iterations
 
 Looking at 100 iterations for different styles for the same picture...
+
+<div style="overflow-x:scroll; width:100%;">
+<table style="table-layout:fixed; width:5000px;">
+ <tr>
+  <td>van-gogh s=100    </td>
+  <td>picasso s=100     </td>
+  <td>cezanne s=100     </td>
+  <td>el-greco s=100    </td>
+  <td>gaugin s=100      </td>
+  <td>kandinsky s=100   </td>
+  <td>kirchner s=100    </td>
+  <td>monet s=100       </td>
+  <td>morisot s=100     </td>
+  <td>peploe s=100      </td>
+  <td>pollock s=100     </td>
+  <td>roerich s=100     </td>
+ </tr>
+ <tr>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/van-gogh.mp4"  width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/picasso.mp4"   width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/cezanne.mp4"   width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/el-greco.mp4"  width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/gaugin.mp4"    width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/kandinsky.mp4" width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/kirchner.mp4"  width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/monet.mp4"     width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/morisot.mp4"   width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/peploe.mp4"    width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/pollock.mp4"   width="796" height="751"></video></div></td>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/roerich.mp4"   width="796" height="751"></video></div></td>
+ </tr>
+</table>
+</div>
 >TODO: videos of resampled style transfer
 
 
