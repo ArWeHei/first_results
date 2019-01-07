@@ -26,22 +26,24 @@ Looking at the scalar data and the plots it even looks like the embeddings diver
 Even for low resolution pictures (30x30 px) neither the image data nor the embeddings converge. Looking at the t-SNE plot the data looks like a raveled ball of wool.
 > TODO: insert video of wool ball
 <video controls="controls">
-  <source type="video/mp4" src="woolball.mov">
+  <source type="video/mp4" src="woolball.mov" width="796" height="751">
   <p>Your browser does not support the video element.</p>
 </video>
 
 ## Possible ideas for what still can be done
-* parallelize the process of inference
+* _parallelize the process of inference_
 
     This is not really practical, as the increase in speed would be lower compared to starting multiple processes on different GPUs for different images.
 
     Maybe this is applicable to training instead of inference?
 
-* log the discriminators certainty of each reencoding!!!!!
+* _log the discriminators certainty of each reencoding!!!!!_
 
     Still a good idea to certain degree, might show strengths/weaknesses of network.
 
-* replace transformer block with i.e. flower vs. plane discriminator and then see if flowers/planes are better stylized
+    Problem: The discriminators weights are not maintianed (?!) and one would have to train a new disrciminator
+
+* _replace transformer block with i.e. flower vs. plane discriminator and then see if flowers/planes are better stylized_
 
     This should be talked about in advance, how much benefit this might give. The main problem is the very long training time for the original model (300,000 iterations per style).
 
