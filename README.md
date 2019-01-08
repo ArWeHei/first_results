@@ -1,7 +1,5 @@
-
 # Overview of results so far
 
-<link rel="stylesheet" href="style.css"></link>
 ## Basics and local stuff
 built TF from source for 2x speed increase on local machine
 
@@ -88,8 +86,9 @@ The resampled images for different original images seem to be similar in their a
 </table>
 </div>
 
-Looking at 100 iterations for different styles for the same picture...
+Looking at 100 iterations for two styles of the same picture...
 
+<!---
 <div style="overflow-x:scroll; width:100%;">
 <table style="table-layout:fixed; width:5000px;">
  <tr>
@@ -106,8 +105,8 @@ Looking at 100 iterations for different styles for the same picture...
   <td>pollock s=100     </td>
   <td>roerich s=100     </td>
  </tr>
- <tr>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/van-gogh.mp4"  width="796" height="751"></video></div></td>
+<tr>
+  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/van-gogh.m4v"  width="800" ></video></div></td>
   <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/picasso.mp4"   width="796" height="751"></video></div></td>
   <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/cezanne.mp4"   width="796" height="751"></video></div></td>
   <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/el-greco.mp4"  width="796" height="751"></video></div></td>
@@ -120,10 +119,12 @@ Looking at 100 iterations for different styles for the same picture...
   <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/pollock.mp4"   width="796" height="751"></video></div></td>
   <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/roerich.mp4"   width="796" height="751"></video></div></td>
  </tr>
+
 </table>
 </div>
->TODO: videos of resampled style transfer
-
+-->
+<video controls="controls"><source type="video/mp4" src="videos/van-gogh.m4v"  width="1024" height="768"></video>
+<video controls="controls"><source type="video/mp4" src="videos/picasso.m4v"  width="1024" height="768"></video>
 
 ## visualizing embeddings/information
 the results have been visualized using the following methods:
@@ -137,9 +138,10 @@ Embeddings were taken from the same run as the pictures before
 
 * for validation purposes use [UMAP](https://umap-learn.readthedocs.io/en/latest/). This requires again use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
 <video controls="controls">
-  <source type="video/mp4" src="umap.mov" width="1126" height="810">
+  <source type="video/mp4" src="videos/umap.mov" width="1126" height="810">
   <p>Your browser does not support the video element.</p>
 </video>
+The color scale goes from blue (s=0) to red (s=50).
 
 
 ## Conclusion
@@ -155,7 +157,7 @@ It was taken from the Places365 database and cropped to 30x30 px.
 This is the result after 10,000 iterations.
 
 <video controls="controls">
-  <source type="video/mp4" src="woolball.mov" width="796" height="751">
+  <source type="video/mp4" src="videos/woolball.mov" width="796" height="751">
   <p>Your browser does not support the video element.</p>
 </video>
 
