@@ -37,7 +37,7 @@ While the abstraction is more obvious for the first few iterations, the image se
 
 The resampled images for different original images seem to be similar in their abstract appearance, yet they do not become more similar over time.
 <div style="overflow-x:scroll; width:100%;">
-<table style="table-layout:fixed; width:1500px;">
+<table style="table-layout:fixed;">
  <tr>
   <td>original          </td>
   <td>van-gogh s=100    </td>
@@ -132,20 +132,22 @@ the results have been visualized using the following methods:
 <div style="overflow-x:scroll; width:100%;">
 <table style="table-layout:fixed;">
  <tr>
-  <td>van-gogh s=100    </td>
-  <td>picasso s=100     </td>
-  <td>cezanne s=100     </td>
-  <td>el-greco s=100    </td>
-  <td>gauguin s=100      </td>
-  <td>kandinsky s=100   </td>
-  <td>kirchner s=100    </td>
-  <td>monet s=100       </td>
-  <td>morisot s=100     </td>
-  <td>peploe s=100      </td>
-  <td>pollock s=100     </td>
-  <td>roerich s=100     </td>
+  <td>visualizaion and parameters</td>
+  <td>van-gogh s=100             </td>
+  <td>picasso s=100              </td>
+  <td>cezanne s=100              </td>
+  <td>el-greco s=100             </td>
+  <td>gauguin s=100              </td>
+  <td>kandinsky s=100            </td>
+  <td>kirchner s=100             </td>
+  <td>monet s=100                </td>
+  <td>morisot s=100              </td>
+  <td>peploe s=100               </td>
+  <td>pollock s=100              </td>
+  <td>roerich s=100              </td>
  </tr>
  <tr>
+  <td><b>t-SNE</b><br> <code>n_components=2</code><br> <code>verbose=1</code><br> <code>perplexity=50</code><br> <code>n_iter=1000</code><br> </td>
   <td><div style="width:180px"><a href="images/van-gogh.png">      <img src="images/van-gogh.png">  </a></div></td>
   <td><div style="width:180px"><a href="images/picasso.png">       <img src="images/picasso.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/cezanne.png">       <img src="images/cezanne.png">   </a></div></td>
@@ -160,6 +162,7 @@ the results have been visualized using the following methods:
   <td><div style="width:180px"><a href="images/roerich.png">       <img src="images/roerich.png">   </a></div></td>
  </tr>
  <tr>
+  <td><b>UMAP</b><br> <code>n_components=2</code><br> <code>n_neighbors=50</code></td>
   <td><div style="width:180px"><a href="images/van-gogh_u.png">      <img src="images/van-gogh_u.png">  </a></div></td>
   <td><div style="width:180px"><a href="images/picasso_u.png">       <img src="images/picasso_u.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/cezanne_u.png">       <img src="images/cezanne_u.png">   </a></div></td>
@@ -211,12 +214,12 @@ This is the result after 10,000 iterations.
 </video>
 
 
-## Possible ideas for what still can be done
+## Ideas for what could still be done
 * __parallelize the process of inference__
 
     This is not really practical, as the increase in speed would be lower compared to starting multiple processes on different GPUs for different images.
 
-    Maybe this is applicable to training instead of inference?
+    Maybe this is applicable to training instead of inference? -> also difficult
 
 * __log the discriminators certainty of each reencoding!__
 
