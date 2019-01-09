@@ -130,7 +130,7 @@ Looking at 100 iterations for two styles of the same picture...
 the results have been visualized using the following methods:
 * For few test images scikit-learn's t-SNE and matplotlib give simple 2D images that indicate that embeddings are rather drifting apart:
 <div style="overflow-x:scroll; width:100%;">
-<table style="table-layout:fixed; width:1500px;">
+<table style="table-layout:fixed;">
  <tr>
   <td>van-gogh s=100    </td>
   <td>picasso s=100     </td>
@@ -178,12 +178,16 @@ the results have been visualized using the following methods:
 Embeddings were taken from the same run as the pictures before
 
 * For more advanced plots (3D) TensorBoard offers nice visualization for embeddings as well as scalar values at the cost of at times very high latency and long loading times for projecting embeddings.
-> TODO: insert images and maybe videos of TB for many images with many reencodings with color coding images the belong togehter
+> TODO: insert images and maybe videos of TB for many images with many reencodings with color coding images the belong together
 > TODO: scalar values that show the distance in feature space between consecutive images for the same data set
 
 * For validation purposes use again [UMAP](https://umap-learn.readthedocs.io/en/latest/). This advertises the use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
 <video controls="controls">
-  <source type="video/mp4" src="videos/umap.mov" width="1126" height="810">
+  <source type="video/mp4" src="videos/van-gogh_umap3d.mov" width="1406" height="898">
+  <p>Your browser does not support the video element.</p>
+</video>
+<video controls="controls">
+  <source type="video/mp4" src="videos/peploe_umap3d.mov" width="1406" height="898">
   <p>Your browser does not support the video element.</p>
 </video>
 The color scale goes from blue (s=0) to red (s=50).
@@ -198,7 +202,7 @@ Even for low resolution pictures (30x30 px) neither the image data nor the embed
 This is the original picture for 10,000 iterations.
 It was taken from the Places365 database and cropped to 30x30 px.
 
-![image](images/3030_stylized.jpg "Original Picture after 10000 iterations")
+<a href="images/3030_stylized.jpg"> <img src="images/3030_stylized.jpg" align="left"  width="30px"></a>
 This is the result after 10,000 iterations.
 
 <video controls="controls">
