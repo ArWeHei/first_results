@@ -44,7 +44,7 @@ The resampled images for different original images seem to be similar in their a
   <td>picasso s=100     </td>
   <td>cezanne s=100     </td>
   <td>el-greco s=100    </td>
-  <td>gaugin s=100      </td>
+  <td>gauguin s=100      </td>
   <td>kandinsky s=100   </td>
   <td>kirchner s=100    </td>
   <td>monet s=100       </td>
@@ -129,14 +129,59 @@ Looking at 100 iterations for two styles of the same picture...
 ## visualizing embeddings/information
 the results have been visualized using the following methods:
 * For few test images scikit-learn's t-SNE and matplotlib give simple 2D images that indicate that embeddings are rather drifting apart:
-> TODO: insert pictures for ~10 sample images with ~100 reencodings van gogh, picasso
+<div style="overflow-x:scroll; width:100%;">
+<table style="table-layout:fixed; width:1500px;">
+ <tr>
+  <td>van-gogh s=100    </td>
+  <td>picasso s=100     </td>
+  <td>cezanne s=100     </td>
+  <td>el-greco s=100    </td>
+  <td>gauguin s=100      </td>
+  <td>kandinsky s=100   </td>
+  <td>kirchner s=100    </td>
+  <td>monet s=100       </td>
+  <td>morisot s=100     </td>
+  <td>peploe s=100      </td>
+  <td>pollock s=100     </td>
+  <td>roerich s=100     </td>
+ </tr>
+ <tr>
+  <td><div style="width:180px"><a href="images/van-gogh.png">      <img src="images/van-gogh.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/picasso.png">       <img src="images/picasso.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/cezanne.png">       <img src="images/cezanne.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/el-greco.png">      <img src="images/el-greco.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/gaugin.png">        <img src="images/gaugin.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/kandinsky.png">     <img src="images/kandinsky.png"> </a></div></td>
+  <td><div style="width:180px"><a href="images/kirchner.png">      <img src="images/kirchner.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/monet.png">         <img src="images/monet.png">     </a></div></td>
+  <td><div style="width:180px"><a href="images/morisot.png">       <img src="images/morisot.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/peploe.png">        <img src="images/peploe.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/pollock.png">       <img src="images/pollock.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/roerich.png">       <img src="images/roerich.png">   </a></div></td>
+ </tr>
+ <tr>
+  <td><div style="width:180px"><a href="images/van-gogh_u.png">      <img src="images/van-gogh_u.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/picasso_u.png">       <img src="images/picasso_u.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/cezanne_u.png">       <img src="images/cezanne_u.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/el-greco_u.png">      <img src="images/el-greco_u.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/gaugin_u.png">        <img src="images/gaugin_u.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/kandinsky_u.png">     <img src="images/kandinsky_u.png"> </a></div></td>
+  <td><div style="width:180px"><a href="images/kirchner_u.png">      <img src="images/kirchner_u.png">  </a></div></td>
+  <td><div style="width:180px"><a href="images/monet_u.png">         <img src="images/monet_u.png">     </a></div></td>
+  <td><div style="width:180px"><a href="images/morisot_u.png">       <img src="images/morisot_u.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/peploe_u.png">        <img src="images/peploe_u.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/pollock_u.png">       <img src="images/pollock_u.png">   </a></div></td>
+  <td><div style="width:180px"><a href="images/roerich_u.png">       <img src="images/roerich_u.png">   </a></div></td>
+ </tr>
+</table>
+</div>
 Embeddings were taken from the same run as the pictures before
 
-* More advanced plots (3D) should allow easier analysis. TensorBoard offers nice visualization for embeddings as well as scalar values at the cost of at times very high latency and long loading times for projecting embeddings
+* For more advanced plots (3D) TensorBoard offers nice visualization for embeddings as well as scalar values at the cost of at times very high latency and long loading times for projecting embeddings.
 > TODO: insert images and maybe videos of TB for many images with many reencodings with color coding images the belong togehter
 > TODO: scalar values that show the distance in feature space between consecutive images for the same data set
 
-* for validation purposes use [UMAP](https://umap-learn.readthedocs.io/en/latest/). This requires again use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
+* For validation purposes use again [UMAP](https://umap-learn.readthedocs.io/en/latest/). This advertises the use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
 <video controls="controls">
   <source type="video/mp4" src="videos/umap.mov" width="1126" height="810">
   <p>Your browser does not support the video element.</p>
@@ -153,7 +198,7 @@ Even for low resolution pictures (30x30 px) neither the image data nor the embed
 This is the original picture for 10,000 iterations.
 It was taken from the Places365 database and cropped to 30x30 px.
 
-![image](images/3030_resampled.jpg "Original Picture after 10000 iterations")
+![image](images/3030_stylized.jpg "Original Picture after 10000 iterations")
 This is the result after 10,000 iterations.
 
 <video controls="controls">
