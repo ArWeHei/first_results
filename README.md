@@ -59,7 +59,7 @@ The resampled images for different original images seem to be similar in their a
   <td><div style="width:115px"><a href="images/picasso/image1_stylized.jpg">       <img src="images/picasso/image1_stylized.jpg">   </a></div></td>
   <td><div style="width:115px"><a href="images/cezanne/image1_stylized.jpg">       <img src="images/cezanne/image1_stylized.jpg">   </a></div></td>
   <td><div style="width:115px"><a href="images/el-greco/image1_stylized.jpg">      <img src="images/el-greco/image1_stylized.jpg">  </a></div></td>
-  <td><div style="width:115px"><a href="images/gaugin/image1_stylized.jpg">        <img src="images/gaugin/image1_stylized.jpg">    </a></div></td>
+  <td><div style="width:115px"><a href="images/gauguin/image1_stylized.jpg">       <img src="images/gauguin/image1_stylized.jpg">   </a></div></td>
   <td><div style="width:115px"><a href="images/kandinsky/image1_stylized.jpg">     <img src="images/kandinsky/image1_stylized.jpg"> </a></div></td>
   <td><div style="width:115px"><a href="images/kirchner/image1_stylized.jpg">      <img src="images/kirchner/image1_stylized.jpg">  </a></div></td>
   <td><div style="width:115px"><a href="images/monet/image1_stylized.jpg">         <img src="images/monet/image1_stylized.jpg">     </a></div></td>
@@ -74,7 +74,7 @@ The resampled images for different original images seem to be similar in their a
   <td><a href="images/picasso/image2_stylized.jpg">       <img src="images/picasso/image2_stylized.jpg">   </a></td>
   <td><a href="images/cezanne/image2_stylized.jpg">       <img src="images/cezanne/image2_stylized.jpg">   </a></td>
   <td><a href="images/el-greco/image2_stylized.jpg">      <img src="images/el-greco/image2_stylized.jpg">  </a></td>
-  <td><a href="images/gaugin/image2_stylized.jpg">        <img src="images/gaugin/image2_stylized.jpg">    </a></td>
+  <td><a href="images/gauguin/image2_stylized.jpg">       <img src="images/gauguin/image2_stylized.jpg">   </a></td>
   <td><a href="images/kandinsky/image2_stylized.jpg">     <img src="images/kandinsky/image2_stylized.jpg"> </a></td>
   <td><a href="images/kirchner/image2_stylized.jpg">      <img src="images/kirchner/image2_stylized.jpg">  </a></td>
   <td><a href="images/monet/image2_stylized.jpg">         <img src="images/monet/image2_stylized.jpg">     </a></td>
@@ -150,7 +150,7 @@ the results have been visualized using the following methods:
   <td><div style="width:180px"><a href="images/picasso.png">       <img src="images/picasso.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/cezanne.png">       <img src="images/cezanne.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/el-greco.png">      <img src="images/el-greco.png">  </a></div></td>
-  <td><div style="width:180px"><a href="images/gaugin.png">        <img src="images/gaugin.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/gauguin.png">       <img src="images/gauguin.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/kandinsky.png">     <img src="images/kandinsky.png"> </a></div></td>
   <td><div style="width:180px"><a href="images/kirchner.png">      <img src="images/kirchner.png">  </a></div></td>
   <td><div style="width:180px"><a href="images/monet.png">         <img src="images/monet.png">     </a></div></td>
@@ -164,7 +164,7 @@ the results have been visualized using the following methods:
   <td><div style="width:180px"><a href="images/picasso_u.png">       <img src="images/picasso_u.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/cezanne_u.png">       <img src="images/cezanne_u.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/el-greco_u.png">      <img src="images/el-greco_u.png">  </a></div></td>
-  <td><div style="width:180px"><a href="images/gaugin_u.png">        <img src="images/gaugin_u.png">    </a></div></td>
+  <td><div style="width:180px"><a href="images/gauguin_u.png">       <img src="images/gauguin_u.png">   </a></div></td>
   <td><div style="width:180px"><a href="images/kandinsky_u.png">     <img src="images/kandinsky_u.png"> </a></div></td>
   <td><div style="width:180px"><a href="images/kirchner_u.png">      <img src="images/kirchner_u.png">  </a></div></td>
   <td><div style="width:180px"><a href="images/monet_u.png">         <img src="images/monet_u.png">     </a></div></td>
