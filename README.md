@@ -87,42 +87,6 @@ The resampled images for different original images seem to be similar in their a
 </div>
 
 Looking at 100 iterations for two styles of the same picture...
-
-<!---
-<div style="overflow-x:scroll; width:100%;">
-<table style="table-layout:fixed; width:5000px;">
- <tr>
-  <td>van-gogh s=100    </td>
-  <td>picasso s=100     </td>
-  <td>cezanne s=100     </td>
-  <td>el-greco s=100    </td>
-  <td>gaugin s=100      </td>
-  <td>kandinsky s=100   </td>
-  <td>kirchner s=100    </td>
-  <td>monet s=100       </td>
-  <td>morisot s=100     </td>
-  <td>peploe s=100      </td>
-  <td>pollock s=100     </td>
-  <td>roerich s=100     </td>
- </tr>
-<tr>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/van-gogh.m4v"  width="800" ></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/picasso.mp4"   width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/cezanne.mp4"   width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/el-greco.mp4"  width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/gaugin.mp4"    width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/kandinsky.mp4" width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/kirchner.mp4"  width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/monet.mp4"     width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/morisot.mp4"   width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/peploe.mp4"    width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/pollock.mp4"   width="796" height="751"></video></div></td>
-  <td><div style="width:800px"><video controls="controls"><source type="video/mp4" src="videos/roerich.mp4"   width="796" height="751"></video></div></td>
- </tr>
-
-</table>
-</div>
--->
 <video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/van-gogh.m4v"  width="1024" height="768">
 </video>
@@ -185,19 +149,40 @@ the results have been visualized using the following methods:
 Embeddings were taken from the same run as the pictures before
 
 * For more advanced plots (3D) TensorBoard offers nice visualization for embeddings as well as scalar values at the cost of at times very high latency and long loading times for projecting embeddings.
-> TODO: insert images and maybe videos of TB for many images with many reencodings with color coding images the belong together
-> TODO: scalar values that show the distance in feature space between consecutive images for the same data set
+<div style="width:100%"><a href="images/rel_dist.png">      <img src="images/rel_dist.png">  </a></div>
+This image shows the distance between subsequent embeddings in feature space for resampling the van-gogh style.
+Intuitively, the value should go down with resampling the same image and only jump for multiples of 100.
+Tensorboard gives a different picture as the distance between images in feature space appears to be random.
+But Tensorboard also withholds information for many datapoints in its representation so a comparison with the embeddings would be appropriate.
+<div style="width:100%"><a href="images/rel_dist_100.png">      <img src="images/rel_dist_100.png">  </a></div>
+For only 100 datapoints all information is displayed but the randomness remains.
 
-* For validation purposes use again [UMAP](https://umap-learn.readthedocs.io/en/latest/). This advertises the use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
+<table>
+<tr>
+<td> PCA </td>
+<td> t-SNE </td>
+</tr>
+<tr>
+<td><div style="width:50%"><a href="images/PCA_3x100.png">          <img src="images/PCA_3x100.png">  </a></div> </td>
+<td><div style="width:50%"><a href="images/t-SNE_3x100.png">      <img src="images/t-SNE_3x100.png">  </a></div> </td>
+</tr>
+</table>
+Looking at the feature space Tensorboard does not give nice t-SNE plots while the PCA plots fit the appearance of the following UMAP plots.
+
+__Tensorboard seems to be problematic when using more than 1000 datapoints especially as the checkpoint files tend to reach 10s of GB. It is easier and more practical to use bokeh for thi, especially when Tensorboard runs not locally and has to send all of its data to the user.__
+
+* For validation purposes use again [UMAP](https://umap-learn.readthedocs.io/en/latest/). This advertises the use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs (<code>n_components=3 n_neighbors=150</code>)
 <video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/van-gogh_umap3d.mov" width="1406" height="898">
   <p>Your browser does not support the video element.</p>
 </video>
+UMAP 3D for van-gogh
 <video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/peploe_umap3d.mov" width="1406" height="898">
   <p>Your browser does not support the video element.</p>
 </video>
-The color scale goes from blue (s=0) to red (s=50).
+UMAP 3D roerich
+
 
 
 ## Conclusion
@@ -205,17 +190,29 @@ Contrary to my expectations, the process of reencoding image data does not tend 
 Looking at the scalar data and the plots, it even looks like the embeddings diverge to a certain degree although the reencodings of different original images look similar to the human eye.
 Even for low resolution pictures (30x30 px) neither the image data nor the embeddings converge for 10,000 iterations. Looking at the t-SNE plot the data looks like a raveled ball of wool.
 
-![image](images/3030_original.jpg "Original Picture")
+<a href="images/3030_original.jpg"> <img src="images/3030_original.jpg" align="left"  width="30px"></a>
 This is the original picture for 10,000 iterations.
 It was taken from the Places365 database and cropped to 30x30 px.
 
 <a href="images/3030_stylized.jpg"> <img src="images/3030_stylized.jpg" align="left"  width="30px"></a>
-This is the result after 10,000 iterations.
+This is the result after 10,000 iterations in picasso style.
+
 
 <video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/woolball.mov" width="796" height="751">
   <p>Your browser does not support the video element.</p>
 </video>
+10000 iterations in Tensorboard using t-SNE
+<video controls="controls" style="width:100%">
+  <source type="video/mp4" src="videos/umap_10000.mov" width="1405" height="887">
+  <p>Your browser does not support the video element.</p>
+</video>
+10000 iterations in bokeh using UMAP.
+<video controls="controls" style="width:100%">
+  <source type="video/mp4" src="videos/umap_10000-10.mov" width="1405" height="887">
+  <p>Your browser does not support the video element.</p>
+</video>
+10000 iterations in bokeh using UMAP only using every 10th data point
 
 
 ## Ideas for what could still be done
