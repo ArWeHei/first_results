@@ -123,8 +123,12 @@ Looking at 100 iterations for two styles of the same picture...
 </table>
 </div>
 -->
-<video controls="controls"><source type="video/mp4" src="videos/van-gogh.m4v"  width="1024" height="768"></video>
-<video controls="controls"><source type="video/mp4" src="videos/picasso.m4v"  width="1024" height="768"></video>
+<video controls="controls" style="width:100%">
+  <source type="video/mp4" src="videos/van-gogh.m4v"  width="1024" height="768">
+</video>
+<video controls="controls" style="width:100%">
+  <source type="video/mp4" src="videos/picasso.m4v"  width="1024" height="768">
+</video>
 
 ## visualizing embeddings/information
 the results have been visualized using the following methods:
@@ -185,11 +189,11 @@ Embeddings were taken from the same run as the pictures before
 > TODO: scalar values that show the distance in feature space between consecutive images for the same data set
 
 * For validation purposes use again [UMAP](https://umap-learn.readthedocs.io/en/latest/). This advertises the use of a different visualization tool. In this case [`bokeh`](https://bokeh.pydata.org/en/latest/) was used, which itself uses [`vis.js`](http://visjs.org) for plotting 3D graphs
-<video controls="controls">
+<video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/van-gogh_umap3d.mov" width="1406" height="898">
   <p>Your browser does not support the video element.</p>
 </video>
-<video controls="controls">
+<video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/peploe_umap3d.mov" width="1406" height="898">
   <p>Your browser does not support the video element.</p>
 </video>
@@ -208,7 +212,7 @@ It was taken from the Places365 database and cropped to 30x30 px.
 <a href="images/3030_stylized.jpg"> <img src="images/3030_stylized.jpg" align="left"  width="30px"></a>
 This is the result after 10,000 iterations.
 
-<video controls="controls">
+<video controls="controls" style="width:100%">
   <source type="video/mp4" src="videos/woolball.mov" width="796" height="751">
   <p>Your browser does not support the video element.</p>
 </video>
